@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar md:navbar-expand bg-1">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">SHARON K SASEENDRAN</a>
+            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+            <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+                <div class="drawer-header">
+                    <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+                </div>
+                <div class="drawer-body mb-2 md:mb-0">
+                    <ul class="nav navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pp">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link nav-contact" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </dialog>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="heropar" id="home">
+        <div class="hr1">
+            <h4 class="hs1">Hi I'm</h4>
+            <h1>SHARON K SASEENDRAN</h1>
+            <h3 class="hs3">Full Stack developer building clean, responsive websites.</h3>
+            <button type="button" class="btn-solid theme-primary bb">Download CV</button>
+        </div>
+        <div class="herochild">
+            <img class="heroimage img-fluid" src="./images/pic1.png" alt="Sharon K Saseendran">
+        </div>
+    </section>
+
+    <!-- about me -->
+    <section class="about" id="about">
+        <h2 class="section-title">About me</h2>
+        <h4>I'm an AI &amp; Machine Learning graduate with an interest in web development and intelligent technologies. I enjoy exploring new tools, building creative projects, and continuously improving my technical skills. I'm passionate about learning, problem-solving, and turning ideas into practical solutions.</h4>
+    </section>
+
+    <!-- projects -->
+    <h2 id="pp">PROJECTS -</h2>
+    <div class="cc">
+        <section class="card">
+            <img src="./images/p1.png" class="card-img-top" alt="Crowd safety monitoring project">
+            <div class="card-body">
+                <h4 class="card-title">Intelligent Crowd Safety Monitoring</h4>
+                <p class="card-text">An overhead crowd scene with subtle detection overlays, like a real computer vision project.</p>
+                <a href="#" class="btn-solid theme-primary">Know More</a>
+            </div>
+        </section>
+        <section class="card">
+            <img src="./images/p2.png" class="card-img-top" alt="Multimodal hate speech detection project">
+            <div class="card-body">
+                <h4 class="card-title">Multimodal Hate Speech Detection</h4>
+                <p class="card-text">A realistic audio and video analysis interface with waveforms and text detection.</p>
+                <a href="#" class="btn-solid theme-primary">Know More</a>
+            </div>
+        </section>
+        <section class="card">
+            <img src="./images/p3.png" class="card-img-top" alt="Situational awareness project">
+            <div class="card-body">
+                <h4 class="card-title">AI-Powered Situational Awareness</h4>
+                <p class="card-text">An event safety dashboard showing crowd density, risk zones, and monitoring data.</p>
+                <a href="#" class="btn-solid theme-primary">Know More</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- skills -->
+    <section class="ss" id="skills">
+        <h3>Skills</h3>
+        <div class="skill-list">
+            <button type="button" class="btn-outline theme-danger">HTML</button>
+            <button type="button" class="btn-outline theme-danger">CSS</button>
+            <button type="button" class="btn-outline theme-danger">Bootstrap</button>
+            <button type="button" class="btn-outline theme-danger">JavaScript</button>
+            <button type="button" class="btn-outline theme-danger">Python</button>
+            <button type="button" class="btn-outline theme-danger">Machine Learning</button>
+            <button type="button" class="btn-outline theme-danger">Deep Learning</button>
+            <button type="button" class="btn-outline theme-danger">Computer Vision</button>
+            <button type="button" class="btn-outline theme-danger">NLP</button>
+            <button type="button" class="btn-outline theme-danger">SQL</button>
+            <button type="button" class="btn-outline theme-danger">React</button>
+            <button type="button" class="btn-outline theme-danger">Git &amp; GitHub</button>
+        </div>
+    </section>
+
+    <!-- contact me -->
+    <section class="contact" id="contact">
+        <div class="contact-info">
+            <h2 class="section-title">Get in touch</h2>
+            <p class="contact-links">
+                <a href="...">email</a> &middot;
+                <a href="..." target="_blank" rel="noopener">LinkedIn</a> &middot;
+                <a href="..." target="_blank" rel="noopener">GitHub</a>
+            </p>
+        </div>
+        <form class="contact-form" action="mailto:your.email@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your name" aria-label="Your name" required>
+            <input type="email" name="email" placeholder="Your email" aria-label="Your email" required>
+            <textarea name="message" rows="4" placeholder="Your message" aria-label="Your message" required></textarea>
+            <button type="submit" class="send-btn">Send</button>
+        </form>
+    </section>
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Sharon K Saseendran &middot;
+        </p>
+    </footer>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+</body>
+</html>
